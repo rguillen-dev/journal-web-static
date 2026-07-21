@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidad — Journal</title>
+<meta name="description" content="Cómo Journal recopila, almacena y protege la información de maestras, familias y niños en las escuelas que lo usan.">
+<meta name="theme-color" content="#041A1A">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; img-src 'self'; script-src 'none'; form-action 'none';">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="icon" type="image/png" href="assets/icon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="page">
+
+  <main class="doc">
+    <p class="eyebrow">Journal</p>
+    <h1>Política de Privacidad / Privacy Policy</h1>
+    <p class="updated">Última actualización / Last updated: July 20, 2026</p>
+
+    <div class="lang-block">
+      <p class="lang-label">Español</p>
+
+      <p>Journal es desarrollado y mantenido por Ricardo Guillen. Journal es una aplicación B2B para preescolares: la maestra documenta el día de cada niño en una tarjeta diaria, y la familia la recibe por notificación en su iPhone. Esta política describe cómo se maneja la información dentro de la app Journal (iOS) y el panel web para maestras.</p>
+
+      <p><strong>Quién usa Journal.</strong> Journal es utilizado por personal de la escuela (maestras, directoras) y por padres/madres de familia. Los niños no usan la aplicación directamente — su información es ingresada por el personal escolar como parte del servicio de la tarjeta diaria, con el consentimiento de la escuela.</p>
+
+      <hr>
+
+      <h2>Qué información recopilamos</h2>
+      <ul>
+        <li><strong>Datos de cuenta:</strong> nombre y correo electrónico de maestras, directoras y padres/madres.</li>
+        <li><strong>Información del niño, ingresada por la escuela:</strong> nombre, salón, estado de ánimo y actividades del día, notas escritas por la maestra, y fotos tomadas durante la jornada escolar. Las fotos solo se comparten cuando la familia ha dado su consentimiento a la escuela para compartir fotos ("photo consent").</li>
+        <li><strong>Identificador de notificaciones push:</strong> un token de dispositivo (Apple Push Notification service) para poder entregar la tarjeta diaria al teléfono de la familia.</li>
+        <li><strong>Datos de diagnóstico:</strong> información técnica de fallos de la app (crash reports), sin contenido personal identificable de niños.</li>
+      </ul>
+      <p>Journal no recopila datos de ubicación, salud, información financiera, contactos del teléfono, ni historial de navegación.</p>
+
+      <h2>Dónde y cómo se almacena</h2>
+      <p>Las fotos se almacenan en Cloudflare R2, mediante enlaces firmados que expiran en minutos y que apuntan a un solo archivo — nunca a una carpeta o bucket completo. El resto de la información (cuentas, tarjetas, notas, etiquetas) se almacena en una base de datos PostgreSQL alojada en Railway. Los datos de cada escuela están aislados de los de cualquier otra escuela ("multi-tenant"); el personal de una escuela nunca puede ver datos de otra.</p>
+
+      <h2>Para qué usamos esta información</h2>
+      <p>Únicamente para operar la función principal de Journal: que la maestra documente el día del niño y que la familia lo reciba. No vendemos información a terceros, no la usamos para publicidad, y no incluimos rastreadores de analítica de terceros dentro de la app.</p>
+
+      <h2>Retención y eliminación de datos</h2>
+      <p>La información se conserva mientras el niño esté inscrito en una escuela que use Journal y la cuenta de la familia permanezca activa. Para solicitar la eliminación de tu cuenta o de la información de tu hijo o hija, escribe a <a href="mailto:support@ricardoguillen.dev">support@ricardoguillen.dev</a>. Las solicitudes se procesan dentro de 30 días.</p>
+
+      <h2>Privacidad de los niños</h2>
+      <p>Journal no está dirigido a niños ni permite que un niño cree una cuenta o use la app directamente. La información sobre un niño proviene del personal de la escuela como parte de la prestación del servicio a su familia, y las fotos solo se comparten cuando la escuela ha registrado el consentimiento de la familia para ello.</p>
+
+      <h2>Seguridad</h2>
+      <p>Toda la comunicación con Journal viaja cifrada (HTTPS). Las contraseñas se almacenan con métodos estándar de la industria (nunca en texto plano). El acceso a fotos usa enlaces firmados de corta duración en lugar de URLs públicas permanentes.</p>
+
+      <h2>Cambios a esta política</h2>
+      <p>Si esta política cambia de forma material, la versión actualizada se publicará en esta misma dirección y se actualizará la fecha de "Última actualización" arriba.</p>
+
+      <p>¿Preguntas? Escríbenos a <a href="mailto:support@ricardoguillen.dev">support@ricardoguillen.dev</a>.</p>
+    </div>
+
+    <div class="lang-block">
+      <p class="lang-label">English</p>
+
+      <p>Journal is developed and maintained by Ricardo Guillen. Journal is a B2B app for preschools: the teacher documents each child's day on a daily card, and the family receives it as a push notification on their iPhone. This policy describes how information is handled within the Journal iOS app and the teacher web dashboard.</p>
+
+      <p><strong>Who uses Journal.</strong> Journal is used by school staff (teachers, principals) and by parents. Children do not use the app directly — their information is entered by school staff as part of delivering the daily-card service, with the school's consent process in place.</p>
+
+      <hr>
+
+      <h2>What we collect</h2>
+      <ul>
+        <li><strong>Account data:</strong> name and email address for teachers, principals, and parents.</li>
+        <li><strong>Child information, entered by the school:</strong> name, classroom, daily mood and activity tags, notes written by the teacher, and photos taken during the school day. Photos are only shared once the family has given the school photo-sharing consent.</li>
+        <li><strong>Push notification identifier:</strong> an Apple Push Notification service device token, used to deliver the daily card to the family's phone.</li>
+        <li><strong>Diagnostic data:</strong> technical crash reports, with no personally identifiable child content.</li>
+      </ul>
+      <p>Journal does not collect location data, health data, financial information, phone contacts, or browsing history.</p>
+
+      <h2>Where and how it's stored</h2>
+      <p>Photos are stored on Cloudflare R2, accessed only via signed links that expire within minutes and point to a single file — never a folder or an entire bucket. Everything else (accounts, cards, notes, tags) is stored in a PostgreSQL database hosted on Railway. Each school's data is isolated from every other school's (multi-tenant); one school's staff can never see another school's data.</p>
+
+      <h2>How we use this information</h2>
+      <p>Solely to operate Journal's core function: letting a teacher document a child's day and a family receive it. We do not sell information to third parties, do not use it for advertising, and do not include third-party analytics trackers in the app.</p>
+
+      <h2>Retention and deletion</h2>
+      <p>Information is retained for as long as the child is enrolled at a school using Journal and the family's account remains active. To request deletion of your account or your child's information, email <a href="mailto:support@ricardoguillen.dev">support@ricardoguillen.dev</a>. Requests are processed within 30 days.</p>
+
+      <h2>Children's privacy</h2>
+      <p>Journal is not directed at children, and no child creates an account or uses the app directly. Information about a child comes from school staff as part of delivering the service to their family, and photos are only shared once the school has recorded the family's consent to do so.</p>
+
+      <h2>Security</h2>
+      <p>All communication with Journal is encrypted in transit (HTTPS). Passwords are stored using industry-standard hashing (never in plain text). Photo access uses short-lived signed links rather than permanent public URLs.</p>
+
+      <h2>Changes to this policy</h2>
+      <p>If this policy changes materially, the updated version will be posted at this same address and the "Last updated" date above will be revised.</p>
+
+      <p>Questions? Contact us at <a href="mailto:support@ricardoguillen.dev">support@ricardoguillen.dev</a>.</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="left">Journal by <a href="https://ricardoguillen.dev" rel="noopener noreferrer">Ricardo Guillen</a></span>
+      <span class="center">
+        <a href="privacy.html">Privacidad</a>
+        <span class="sep">·</span>
+        <a href="support.html">Soporte</a>
+      </span>
+      <span class="right">© 2026</span>
+    </div>
+  </footer>
+
+</body>
+</html>
