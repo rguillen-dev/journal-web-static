@@ -115,6 +115,23 @@ img {
   align-items: center;
 }
 
+.hero-inner--single {
+  grid-template-columns: 1fr;
+  max-width: 720px;
+  text-align: center;
+}
+
+.hero-inner--single .cta-row,
+.hero-inner--single .social-proof {
+  justify-content: center;
+}
+
+.hero-inner--single .hero-icon,
+.hero-inner--single .hero-descriptor {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .hero-icon {
   width: 96px;
   height: 96px;
