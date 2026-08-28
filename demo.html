@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solicitar una demo — Journal</title>
+<meta name="description" content="Solicita una demo de Journal para tu preescolar, guardería o centro de primera infancia. Respondemos en 24–48 horas.">
+<meta name="theme-color" content="#041A1A">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; img-src 'self'; script-src 'none'; form-action https://agenda.nizzledev.com;">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="icon" type="image/png" href="assets/icon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="page">
+
+  <main class="doc">
+    <p class="eyebrow">Journal</p>
+    <h1>Solicitar una demo / Request a demo</h1>
+
+    <div class="lang-block">
+      <p class="lang-label">Español</p>
+      <p>Cuéntanos sobre tu centro y coordinamos una demo. Leemos cada solicitud y respondemos en 24–48 horas.</p>
+    </div>
+
+    <div class="lang-block">
+      <p class="lang-label">English</p>
+      <p>Tell us about your center and we'll set up a demo. We read every request and respond within 24–48 hours.</p>
+    </div>
+
+    <form class="demo-form" method="post" action="https://agenda.nizzledev.com/v1/leads">
+
+      <div class="form-field">
+        <label class="form-label" for="school_name">Nombre del centro <span class="form-label-en">/ Center name</span></label>
+        <input class="form-input" type="text" id="school_name" name="school_name" required>
+      </div>
+
+      <div class="form-field">
+        <label class="form-label" for="contact_name">Nombre de contacto <span class="form-label-en">/ Contact name</span></label>
+        <input class="form-input" type="text" id="contact_name" name="contact_name" required>
+      </div>
+
+      <div class="form-field">
+        <label class="form-label" for="role">Rol <span class="form-label-en">/ Role</span></label>
+        <input class="form-input" type="text" id="role" name="role" required>
+      </div>
+
+      <div class="form-field">
+        <label class="form-label" for="email">Correo <span class="form-label-en">/ Email</span></label>
+        <input class="form-input" type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-field">
+        <label class="form-label" for="phone">Teléfono <span class="form-label-en">/ Phone</span></label>
+        <input class="form-input" type="tel" id="phone" name="phone">
+      </div>
+
+      <div class="form-field">
+        <label class="form-label" for="children_count">Número aproximado de niños <span class="form-label-en">/ Approximate number of children</span></label>
+        <input class="form-input" type="number" min="1" id="children_count" name="children_count">
+      </div>
+
+      <div class="form-field">
+        <label class="form-label" for="classrooms_count">Número de salones <span class="form-label-en">/ Number of classrooms</span></label>
+        <input class="form-input" type="number" min="1" id="classrooms_count" name="classrooms_count">
+      </div>
+
+      <div class="form-field">
+        <label class="form-label" for="location">Ciudad / país <span class="form-label-en">/ City / country</span></label>
+        <input class="form-input" type="text" id="location" name="location">
+      </div>
+
+      <div class="form-field">
+        <label class="form-label" for="message">Mensaje <span class="form-label-en">/ Message</span></label>
+        <textarea class="form-textarea" id="message" name="message" rows="4"></textarea>
+      </div>
+
+      <button class="btn-primary" type="submit">
+        Enviar solicitud / Send request
+      </button>
+
+    </form>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="left">Journal by <a href="https://ricardoguillen.dev" rel="noopener noreferrer">Ricardo Guillen</a></span>
+      <span class="center">
+        <a href="privacy.html">Privacidad</a>
+        <span class="sep">·</span>
+        <a href="support.html">Soporte</a>
+      </span>
+      <span class="right">© 2026</span>
+    </div>
+  </footer>
+
+</body>
+</html>

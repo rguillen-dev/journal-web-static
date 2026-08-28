@@ -461,6 +461,93 @@ img {
   opacity: 0.6;
 }
 
+/* ============ Pricing table (para-escuelas) ============ */
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 24px;
+  font-size: 16px;
+}
+
+.pricing-table th,
+.pricing-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--color-text-2);
+}
+
+.pricing-table th {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  color: var(--color-text-3);
+}
+
+.pricing-table td:last-child,
+.pricing-table th:last-child {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+/* ============ Form (demo request) ============ */
+.demo-form {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-label {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.form-label-en {
+  font-weight: 400;
+  color: var(--color-text-3);
+}
+
+.form-input,
+.form-textarea {
+  font: inherit;
+  font-size: 16px;
+  color: var(--color-text);
+  background: var(--color-glass-fill);
+  border: 1px solid var(--color-glass-border);
+  border-radius: 12px;
+  padding: 12px 16px;
+  width: 100%;
+  transition: border-color 160ms ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--color-glow);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.demo-form .btn-primary {
+  align-self: flex-start;
+  margin-top: 8px;
+  border: none;
+  font: inherit;
+}
+
 /* ============ Document pages (privacy/support) ============ */
 .doc {
   padding: 140px var(--pad-x) 100px;
