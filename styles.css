@@ -548,6 +548,18 @@ img {
   font: inherit;
 }
 
+/* Honeypot field — never shown to real visitors; left in normal markup
+   (no display:none/visibility:hidden) so it still reads as fillable to a
+   naive bot, but is moved off the visible canvas and out of tab order. */
+.form-honeypot {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 /* ============ Document pages (privacy/support) ============ */
 .doc {
   padding: 140px var(--pad-x) 100px;
